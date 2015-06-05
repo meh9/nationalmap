@@ -2833,10 +2833,15 @@
         },
         {
             "name": "South Australian Government",
+            "type": "ckan",
             "description": "[Licence](http://creativecommons.org/licenses/by/2.5/au/)",
             "dataCustodian": "[South Australian Government](http://www.sa.gov.au/)",
-            "url": "http://geoserver.nationalmap.nicta.com.au/sa_gov_au/ows",
-            "type": "wms-getCapabilities"
+            "url": "http://www.data.sa.gov.au/data",
+            "filterQuery": ["fq=res_format%3awms&q=-organization%3acommonwealth-datasets"],
+            "filterByWmsGetCapabilities": false,
+            "minimumMaxScaleDenominator": 1e10,
+            "allowEntireWmsServers": true,
+            "groupBy": "none"
         },
         {
             "name": "Tasmanian Government",
